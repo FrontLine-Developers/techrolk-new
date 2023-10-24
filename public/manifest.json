@@ -1,0 +1,39 @@
+{
+    "name": "TechRoLK Engineering Solutions",
+    "short_name": "TechRoLK",
+    "version": "1.5",
+    "description": "Build Your Imagination",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#FF4747",
+    "icons": [
+      {
+        "src": "logo-70.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "logo-180.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "logo-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "logo-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "permissions": [
+      "notifications" 
+    ],
+    "scope": "/",
+    "orientation": "any",
+    "prefer_related_applications": true
+  }
+  
