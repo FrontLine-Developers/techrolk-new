@@ -6,7 +6,7 @@
 <meta http-equiv="cache-control" content="max-age=604800" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Shoppp │ TechRoLK Engineering Solutions</title>
+<title>Shop │ TechRoLK Engineering Solutions</title>
 
 
 
