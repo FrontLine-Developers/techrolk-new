@@ -64,3 +64,7 @@ Route::get('/privacy', function () {
 Route::get('/shop', function () {
     return view("shop.shop_index");
 });
+
+Route::get('/Shop', function () {
+    return view("shop.shop_index");
+});

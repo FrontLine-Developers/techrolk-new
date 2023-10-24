@@ -115,11 +115,11 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{url('/')}}"
                     class="nav-item nav-link <?php if ($page === 'home') echo 'active'; ?> nav-link pulse">Home</a>
-                <a href="{{url('/services')}}"
+                <a href="{{ urldecode(url('/services')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'services') echo 'active'; ?>">Services</a>
-                <a href="{{url('/about')}}"
+                <a href="{{ urldecode(url('/about')) }}"
                     class="nav-item nav-link <?php if ($page === 'about') echo 'active'; ?> nav-link pulse">About Us</a>
-                <a href="{{url('/contact')}}"
+                <a href="{{ urldecode(url('/contact')) }}"
                     class="nav-item nav-link <?php if ($page === 'contact') echo 'active'; ?> nav-link pulse">Contact</a>
 
                 <a href="{{ urldecode(url('/shop')) }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
