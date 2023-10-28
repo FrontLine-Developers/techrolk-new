@@ -121,7 +121,7 @@
     </div>
 </div>
 
-<center><a class="btn btn-primary py-3 px-5 mt-2 wow fadeInUp" data-wow-delay="0.1s" href="https://techrolk.com/store">Visit Our Shop Now</a></center>
+<center><a class="btn btn-primary py-3 px-5 mt-2 wow fadeInUp" data-wow-delay="0.1s" href="https://techrolk.com/shop">Visit Our Shop Now</a></center>
 <!-- Counter End -->
 
 

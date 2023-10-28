@@ -61,10 +61,41 @@ Route::get('/privacy', function () {
     return view('privacy');
 });
 
+Route::get('/shipping-details', function () {
+    return view('shipping');
+});
+
+Route::get('/refund-policy', function () {
+    return view('refund');
+});
+
 Route::get('/shop', function () {
     return view("shop.shop_index");
 });
 
 Route::get('/Shop', function () {
     return view("shop.shop_index");
+});
+
+
+Route::get('/shop/product', function () {
+    return view("shop.shop_product_details");
+});
+
+Route::get('/shop/cart', function () {
+    return view("shop.shop_cart");
+});
+
+
+Route::get('/shop/login', function () {
+    return view("shop.shop_user_login");
+});
+
+Route::get('/shop/register', function () {
+    return view("shop.shop_user_register");
+});
+
+
+Route::get('/shop/categories', function () {
+    return view("shop.shop_category");
 });

@@ -11,37 +11,6 @@
 
 
 
-<style>
-	::selection {
-    	background-color: #ff0000;
-        color: #ffffff;
-    }
-
-	.search-container {
-		display: flex;
-		align-items: center;
-		padding-top: 5px;
-	}
-
-	#search-input {
-		width: 350px;
-		padding: 10px;
-		font-size: 16px;
-		border: 1px solid #ccc;
-		border-radius: 0.5ch;
-	}
-
-	#search-button {
-		padding: 10px;
-		font-size: 16px;
-		background-color: #ed252c;
-		color: #fff;
-		border: none;
-		border-radius: 0.5ch;
-		cursor: pointer;
-	}
-
-</style>
 
 </head>
 <body>
@@ -149,7 +118,7 @@
 		<div href="#" class="card card-product-grid">
 			<a href="#" class="img-wrap"> <img src="images/items/1.jpg"> </a>
 			<figcaption class="info-wrap">
-				<a href="#" class="title">Just another product name</a>
+				<a href="{{url('/product')}}" class="title">Just another product name</a>
 				
 				<div class="rating-wrap">
 					<ul class="rating-stars">

@@ -5,19 +5,19 @@
 				<aside class="col-md">
 					<h6 class="title">Company</h6>
 					<ul class="list-unstyled">
-						<li> <a href="{{url('new/Dashboard')}}">Home</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">About us</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">Contact Us</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">Services</a></li>
+						<li> <a href="{{url('/')}}">Home</a></li>
+						<li> <a href="{{url('/about')}}">About us</a></li>
+						<li> <a href="{{url('/contact')}}">Contact Us</a></li>
+						<li> <a href="{{url('/services')}}">Services</a></li>
 					</ul>
 				</aside>
 				<aside class="col-md">
 					<h6 class="title">Account</h6>
 					<ul class="list-unstyled">
-						<li> <a href="{{url('new/Dashboard')}}"> User Login </a></li>
-						<li> <a href="{{url('new/Dashboard')}}"> User Register </a></li>
-						<li> <a href="{{url('new/Dashboard')}}"> Account Details </a></li>
-						<li> <a href="{{url('new/Dashboard')}}"> My Orders </a></li>
+						<li> <a href="{{url('/shop/login')}}"> User Login </a></li>
+						<li> <a href="{{url('/shop/register')}}"> User Register </a></li>
+						<li> <a href="{{url('/shop/account')}}"> Account Details </a></li>
+						<li> <a href="{{url('/shop/cart')}}"> My Cart </a></li>
 					</ul>
 				</aside>
 				<aside class="col-md">
@@ -32,10 +32,10 @@
 				<aside class="col-md">
 					<h6 class="title">Legal</h6>
 					<ul class="list-unstyled">
-						<li> <a href="{{url('new/Dashboard')}}">Privacy Policy</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">Refund Policy</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">Shipping Details</a></li>
-						<li> <a href="{{url('new/Dashboard')}}">Terms & Conditions</a></li>
+						<li> <a href="{{url('/privacy')}}">Privacy Policy</a></li>
+						<li> <a href="{{url('/refund-policy')}}">Refund Policy</a></li>
+						<li> <a href="{{url('/shipping-details')}}">Shipping Details</a></li>
+						<li> <a href="{{url('/terms')}}">Terms & Conditions</a></li>
 					</ul>
 				</aside>
 			</div> <!-- row.// -->
@@ -46,8 +46,8 @@
 				<p>&copy; 2023 TechRoLK Engineering Solutions<br>Developed by <a href="https://frontline-developers.github.io/" target="_blank">FrontLine Developers</a></p>
 			</div>
 			<div class="col-md-8 text-md-center">
-				<span  class="px-2"><a href="mailto:techrolk.sales@gmail.com">techrolk.sales@gmail.com</a></span>
-				<span  class="px-2"><a href="tel:+94761943645">+94761943645</a></span>
+				<span  class="px-2"><a href="mailto:techrolk.sales@gmail.com" target="_blank">techrolk.sales@gmail.com</a></span>
+				<span  class="px-2"><a href="tel:+94761943645" target="_blank">+94761943645</a></span>
 				<span  class="px-2">
 				<i class="fab fa-lg fa-cc-visa"></i>
 				<i class="fab fa-lg fa-cc-paypal"></i>
