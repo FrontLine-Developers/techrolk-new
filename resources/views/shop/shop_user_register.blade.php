@@ -84,7 +84,7 @@
 			        <button type="submit" class="btn btn-primary btn-block"> Register  </button>
 			    </div> <!-- form-group// -->      
 			    <div class="form-group"> 
-		            <label class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" checked=""> <div class="custom-control-label"> I am agree with <a href="#">terms and contitions</a>  </div> </label>
+		            <label class="custom-control custom-checkbox"> <input type="checkbox" class="custom-control-input" checked=""> <div class="custom-control-label"> I am agree with <a href="{{ urldecode(url('/terms')) }}">terms and contitions</a>  </div> </label>
 		        </div> <!-- form-group end.// -->           
 			</form>
 		</article><!-- card-body.// -->

@@ -63,11 +63,11 @@ $(document).ready(function() {
 
 
  <!-- Favicon -->
- 	<link rel="shortcut icon" href="shop-content/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="shop-contenticons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="shop-content/icons/logo-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="shop-contenticons/logo-192.png">
-    <meta name="msapplication-TileImage" content="shop-content/icons/logo-70.png">
+ 	<link rel="shortcut icon" href="{{ asset('shop-content/icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('shop-contenticons/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('shop-content/icons/logo-180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('shop-contenticons/logo-192.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('shop-content/icons/logo-70.png') }}">
     <meta name="msapplication-TileColor" content="#FF4747">
 
 </head>
@@ -105,7 +105,7 @@ $(document).ready(function() {
 		</div> <!-- brand-wrap.// -->
 	</div>
 	<div class="col-lg-6 col-sm-12">
-		<form action="#" class="search">
+		<form action="{{ urldecode(url('/shop/search')) }}" class="search">
 			<div class="input-group w-100">
 			    <input type="text" class="form-control" placeholder="Search">
 			    <div class="input-group-append">

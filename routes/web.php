@@ -99,3 +99,11 @@ Route::get('/shop/register', function () {
 Route::get('/shop/categories', function () {
     return view("shop.shop_category");
 });
+
+Route::get('/shop/search', function () {
+    return view("shop.search-results");
+});
+
+Route::get('/shop/all-products', function () {
+    return view("shop.all-products");
+});

@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="main_nav">
       <ul class="navbar-nav">
       	<li class="nav-item dropdown">
-          <a class="nav-link pl-0" href="{{url('All-Items')}}"><strong> <i class="fa fa-bars"></i> &nbsp  All category</strong></a>
+          <a class="nav-link pl-0" href="{{ urldecode(url('/shop/all-products')) }}"><strong> <i class="fa fa-bars"></i> &nbsp  All category</strong></a>
         </li>
 		
 
