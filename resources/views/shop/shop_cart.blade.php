@@ -52,7 +52,7 @@
 			<div class="aside"><img src="images/items/1.jpg" class="img-sm"></div>
 			<figcaption class="info">
 				<a href="#" class="title text-dark">Some name of item goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+				<p class="text-muted small">Category: Drone <br> Brand: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -81,7 +81,7 @@
 			<div class="aside"><img src="images/items/2.jpg" class="img-sm"></div>
 			<figcaption class="info">
 				<a href="#" class="title text-dark">Product name  goes here nice</a>
-				<p class="text-muted small">Size: XL, Color: blue, <br> Brand: Gucci</p>
+				<p class="text-muted small">Category: Drone <br> Brand: Gucci</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -110,7 +110,7 @@
 			<div class="aside"><img src="images/items/3.jpg" class="img-sm"></div>
 			<figcaption class="info">
 				<a href="#" class="title text-dark">Another name of some product goes just here as a demo text </a>
-				<p class="small text-muted">Size: XL, Color: blue,  Brand: Tissot</p>
+				<p class="small text-muted">Category: Drone  Brand: Tissot</p>
 			</figcaption>
 		</figure>
 	</td>
@@ -142,7 +142,7 @@
 </div> <!-- card.// -->
 
 <div class="alert alert-success mt-3">
-	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Free Delivery within 1-2 weeks</p>
+	<p class="icontext"><i class="icon text-success fa fa-truck"></i> Delivery within 1-2 weeks</p>
 </div>
 
 	</main> <!-- col.// -->
