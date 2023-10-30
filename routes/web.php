@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -106,4 +106,18 @@ Route::get('/shop/search', function () {
 
 Route::get('/shop/all-products', function () {
     return view("shop.all-products");
+});
+/*Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});*/
+
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
+])->group(function () {
+    Route::get('/dashboard',[AdminController::class,'dashboard'])->name('dashboard');
 });
