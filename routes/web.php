@@ -173,3 +173,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
 ])->group(function () {
     Route::get('/service-Details/{id}',[AdminController::class,'Service_Details'])->name('Service_Details');
 });
+
+
+Route::middleware(['redirect.product.url'])->group(function () {
+    Route::get('product/{product}', function(Product $product) {
+        // ...
+    });
+});
+
