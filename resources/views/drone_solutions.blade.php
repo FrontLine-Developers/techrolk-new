@@ -39,8 +39,8 @@
 
 
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+            <div class="row g-12">
+                <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <h6 class="section-title bg-white text-start text-primary pe-3"></h6>
                     <h2 class="mb-4">Drone Solutions</h2>
                     <h6 class="bg-white text-start text-primary "></h6>
@@ -48,6 +48,9 @@
                         be an existing Drone solution or an unique drone solution to your requirement. using powerful 3D
                         modelling and analysing tools we can optimise the concept designs, <br><br>
                         <h5>Tailor made customized drone solutions</h5>
+                        <div class="position-relative ">
+                        <img src="content/img/img-services/drone/drone1.jpg" width="500" style="object-fit: cover; border-radius: 8px;">
+                    </div>
                         For standard level requirements, we are capable of Modifying and configuring existing drone
                         frames to perform optimally to your specific needs. Examples of such modifications include:</li>
                         <ol type="i">
@@ -58,18 +61,27 @@
                             <li>Multi-payload UAVs/Drones.</li>
                         </ol>
                         <h5>Commercial purpose Drones</h5>
+                        <div class="position-relative ">
+                        <img src="content/img/img-services/drone/drone1.jpg" width="500" style="object-fit: cover; border-radius: 8px;">
+                    </div>
                         we provide full complete drone solution for your commercial needs.
 
                         fully tuned drone and remote controller, charger, battery, technical support, door to door
                         shipping solutions and custom crate boxes for the drone kit. <br><br>
 
                         <h5>Drone Accessories</h5>
+                        <div class="position-relative ">
+                        <img src="content/img/img-services/drone/drone1.jpg" width="500" style="object-fit: cover; border-radius: 8px;">
+                    </div>
                         we can customize and provide accessories for drones. such as:- crate boxes, Payload attachments,
                         Covers, external sensor and actuator packages, etc…<br><br>
                         <h5>Entertainment Purpose Drones</h5>
 
                         <br>
                         <h5>Research Purpose Drones (Unmanned Ground and Aerial Vehicle - UGAV)</h5>
+                        <div class="position-relative ">
+                        <img src="content/img/img-services/drone/drone1.jpg" width="500" style="object-fit: cover; border-radius: 8px;">
+                    </div>
 
                         When comes to a disaster event, time is critical factor to rescue victims. but when the disaster
                         happens in remote area or difficult to reach area, most of the current rescue methods from air
@@ -87,20 +99,7 @@
                         programmed using off the shelf components.
                     </p>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative ">
-                        <img class="img-fluid w-100 h-100" src="content/img/img-services/drone/drone1.jpg"
-                            alt="" style="object-fit: cover; border-radius: 8px;">
-                    </div>
-                    <div class="position-relative ">
-                        <img class="img-fluid w-100 h-100" src="content/img/img-services/drone/Screenshot-2023-05-29-123317-e1685343895715-1024x759.png"
-                            alt="" style="object-fit: cover; border-radius: 8px;">
-                    </div>
-                    <div class="position-relative ">
-                        <img class="img-fluid w-100 h-100" src="content/img/img-services/drone/Screenshot-2023-05-29-123317-e1685343895715-1024x759.png"
-                            alt="" style="object-fit: cover; border-radius: 8px;">
-                    </div>
-                </div>
+            
             </div>
         </div>
     </header>
