@@ -216,7 +216,7 @@ Route::get('/portfolio',[PortfolioController::class,'portfolio'])->name('portfol
 Route::get('/service/{book_id}', [ServiceController::class, 'portfoliosByBook'])->name('portfoliosByBook');
 
 Route::get('/portfolio/{portfolio_id}', [ServiceController::class, 'portfoliosByPortfolio'])->name('portfoliosByPortfolio');
-    Route::get('/service-Details/{id}',[AdminController::class,'Service_Details'])->name('Service_Details');
+ 
 
 
 Route::middleware(['redirect.product.url'])->group(function () {
