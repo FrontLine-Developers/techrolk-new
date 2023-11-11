@@ -51,6 +51,23 @@
             color: maroon;
         }
 
+        .portfolio-dropdown:hover .portfolio-submenu {
+            display: block;
+        }
+
+        .portfolio-dropdown {
+            position: relative;
+        }
+
+        .portfolio-submenu {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-top: 0; /* Adjusted from -1px */
+            background-color: #fff;
+        }
+
         @keyframes pulse-animation {
             0% {
                 transform: scale(1);
@@ -83,6 +100,7 @@
             .h6-header {
                 font-size: 13px;
             }
+            
         }
     </style>
 
@@ -117,6 +135,31 @@
                     class="nav-item nav-link <?php if ($page === 'home') echo 'active'; ?> nav-link pulse">Home</a>
                 <a href="{{ urldecode(url('/services')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'services') echo 'active'; ?>">Services</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownPortfolios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Portfolios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownBooks">
+                            @foreach ($books as $book)
+                                <div class="portfolio-dropdown">
+                                    <a class="dropdown-item" href="{{ url('/service', ['book_id' => $book->id]) }}">{{ $book->name }}</a>
+                                    <div class="portfolio-submenu">
+                                        @foreach ($book->portfolios as $portfolio)
+                                            <!--<a class="dropdown-item" href="{{ url('/portfolios', ['portfolio_id' => $portfolio->id]) }}">{{ $portfolio->title }}</a>-->
+                                            <a class="dropdown-item" href="{{ url('/portfolio', ['portfolio_id' => $portfolio->id]) }}">{{ $portfolio->title }}</a>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>    
+
+
+
+
+
+                   
                 <a href="{{ urldecode(url('/about')) }}"
                     class="nav-item nav-link <?php if ($page === 'about') echo 'active'; ?> nav-link pulse">About Us</a>
                 <a href="{{ urldecode(url('/contact')) }}"
