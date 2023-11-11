@@ -165,7 +165,7 @@
                 <a href="{{ urldecode(url('/contact')) }}"
                     class="nav-item nav-link <?php if ($page === 'contact') echo 'active'; ?> nav-link pulse">Contact</a>
 
-                <a href="{{ urldecode(url('/shop')) }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
+                <a href="https://techrolk.com/shop/" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
                         class="fa fa-arrow-right ms-3"></i></a>
 
             </div>

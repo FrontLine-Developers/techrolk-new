@@ -3,12 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>404 Page Not Found</title>
+    <title>Loading...</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <?php
     $page = '';
 ?>
+
+<script>
+  // Get the current URL.
+  var currentUrl = window.location.href;
+
+  // Check if the URL contains the `/public` segment.
+  if (currentUrl.indexOf('/public/') >= 0) {
+    // Remove the `/public` segment from the URL.
+    var correctedUrl = currentUrl.replace('/public', '');
+
+    // Redirect the user to the corrected URL.
+    window.location.href = correctedUrl;
+  }
+</script>
 
     @include('header')
 
