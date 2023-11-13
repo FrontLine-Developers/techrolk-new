@@ -171,7 +171,7 @@ Route::get('/Portfolios', [PortfolioController::class, 'showPortfoliosByBook'])
 
 
 
- 
+
 
  /* redirector */
  Route::middleware(['redirect.product.url'])->group(function () {
