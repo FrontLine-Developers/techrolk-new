@@ -8,12 +8,12 @@ use App\Models\Portfolio;
 use Illuminate\Support\Str;
 class PortfolioController extends Controller
 {
-    public function portfolio()
+    /*public function portfolio()
     {
         $portfolios = Portfolio::all();
         $books = Book::all();
         return view('portfolio', compact('portfolios','books'));
-    }
+    }*/
  
     public function showPortfoliosByBook()
 {
