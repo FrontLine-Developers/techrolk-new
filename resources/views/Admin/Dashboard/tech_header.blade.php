@@ -58,8 +58,8 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{{url('new/Dashboard')}}"><img src="../images/logo main.png" alt="" width="35px">&nbsp &nbsp
-            TechRoLK - Admin Blog Pannel</a>
+        <a class="navbar-brand ps-3" href="{{url('/dashboard')}}"><img src="{{ asset('content/icons/logo.png') }}" alt="" width="35px">&nbsp &nbsp
+            TechRoLK - Admin Pannel</a>
     </nav>
 
 

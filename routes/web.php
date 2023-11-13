@@ -168,3 +168,14 @@ Route::get('/Portfolios', [PortfolioController::class, 'showPortfoliosByBook'])
     
  Route::get('/{portfolio}', [PortfolioController::class, 'showPortfolioInBook'])->name('showPortfolioInBook');
  
+
+
+
+
+
+ /* redirector */
+ Route::middleware(['redirect.product.url'])->group(function () {
+    Route::get('product/{product}', function(Product $product) {
+        // ...
+    });
+});
