@@ -57,6 +57,7 @@
     </div>
     <!-- Header End -->
 
+
     @foreach ($portfolios as $portfolio)
     <div class="container-xxl py-5" id="drone-solutions">
 
@@ -68,80 +69,26 @@
 
             <div class="container">
                 <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <p class="mb-4">{!! $portfolio->description !!}
-                        </p>
-                      
-                    </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-    <div class="position-relative h-100">
-        @if ($portfolio->youtube_video_url)
-            <iframe class="position-absolute w-100 h-100" src="{{ $portfolio->youtube_video_url }}"
-                frameborder="0" allowfullscreen></iframe>
-        @else
-            <!-- Provide a default image or message when the YouTube video URL is not available -->
-            <img class="img-fluid position-absolute w-100 h-100" src="/uploadsP/{{ $portfolio->image1 }}"
-                alt="Drone-Solutions" style="object-fit: cover;">
-        @endif
-    </div>
-</div>
-                    
+                        <div class="position-relative h-100">
+                            <img class="img-fluid position-absolute w-100 h-100" src="/uploadsP/{{$portfolio->image1}}" alt="Drone-Solutions"
+                                style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <p class="mb-4">{!! $portfolio->small_description !!}
+                        </p>
+                       <a class="btn btn-primary py-3 px-5 mt-2" href="#">Explore</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="container">
-        
-        <div class="owl-carousel testimonial-carousel position-relative">
-            
-                @if ($portfolio->image1 || $portfolio->image2 || $portfolio->image3 || $portfolio->image4)
-                    <div class="testimonial-item text-center">
-                        @if ($portfolio->image1)
-                            <img class="border rounded-custom p-2 mx-auto mb-3" src="/uploadsP/{{ $portfolio->image1 }}"
-                                style="width: 340px; height: 340px;">
-                        @endif
-                    </div>
-
-                    <div class="testimonial-item text-center">
-                        @if ($portfolio->image2)
-                            <img class="border rounded-custom p-2 mx-auto mb-3" src="/uploadsP/{{ $portfolio->image2 }}"
-                                style="width: 340px; height: 340px;">
-                        @endif
-                    </div>
-                    @if ($portfolio->image3)
-                    <div class="testimonial-item text-center">
-                        
-                            <img class="border rounded-custom p-2 mx-auto mb-3" src="/uploadsP/{{ $portfolio->image3 }}"
-                                style="width: 340px; height: 340px;">
-                       
-                    </div>
-                    @endif
-                    @if ($portfolio->image4)
-                    <div class="testimonial-item text-center">
-                        
-                            <img class="border rounded-custom p-2 mx-auto mb-3" src="/uploadsP/{{ $portfolio->image4 }}"
-                                style="width: 340px; height: 340px;">
-                       
-                    </div>
-                    @endif
-                @endif
-           
-        </div>
-    </div>
-</div>
     @endforeach
-   
 
-<!---->
+    
 
-
-            
-            
-        </div>
-    </div>
-</div>
    
 
 

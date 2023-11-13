@@ -5,11 +5,11 @@
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="content/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="content/icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="content/icons/logo-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="content/icons/logo-192.png">
-    <meta name="msapplication-TileImage" content="content/icons/logo-70.png">
+    <link rel="shortcut icon" href="{{ asset('content/icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('content/icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('content/icons/logo-180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('content/icons/logo-192.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('content/icons/logo-70.png') }}">
     <meta name="msapplication-TileColor" content="#FF4747">
 
     <!-- Google Fonts -->
@@ -123,7 +123,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="{{url('/')}}" class="navbar-brand d-flex align-items-center px-1 px-lg-4">
-            <img src="content/icons/logo.png" alt="" class="img-header">
+            <img src="{{ asset('content/icons/logo.png') }}" alt="" class="img-header">
             <h5 class="m-0 text-primary h5-header" style="font-family: 'Arimo', sans-serif;">&nbsp; &nbsp; TechRoLK <br>&nbsp; &nbsp; Engineering Solutions</h5>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -135,7 +135,10 @@
                     class="nav-item nav-link <?php if ($page === 'home') echo 'active'; ?> nav-link pulse">Home</a>
                 <a href="{{ urldecode(url('/services')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'services') echo 'active'; ?>">Services</a>
+                <a href="{{ urldecode(url('/portfolio')) }}"
+                    class="nav-item nav-link nav-link pulse <?php if ($page === 'portfolio') echo 'active'; ?>">Portfolio</a>
 
+                    <!--
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownPortfolios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Portfolios
@@ -146,7 +149,7 @@
                                     <a class="dropdown-item" href="{{ url('/service', ['book_id' => $book->id]) }}">{{ $book->name }}</a>
                                     <div class="portfolio-submenu">
                                         @foreach ($book->portfolios as $portfolio)
-                                            <!--<a class="dropdown-item" href="{{ url('/portfolios', ['portfolio_id' => $portfolio->id]) }}">{{ $portfolio->title }}</a>-->
+                                            <a class="dropdown-item" href="{{ url('/portfolios', ['portfolio_id' => $portfolio->id]) }}">{{ $portfolio->title }}</a>
                                             <a class="dropdown-item" href="{{ url('/portfolio', ['portfolio_id' => $portfolio->id]) }}">{{ $portfolio->title }}</a>
                                         @endforeach
                                     </div>
@@ -154,6 +157,7 @@
                             @endforeach
                         </div>
                     </div>    
+                    -->
 
 
 
