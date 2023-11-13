@@ -19,11 +19,11 @@ use App\Http\Controllers\PortfolioController;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/',[ServiceController::class,'Home'])->name('Home');
+//Route::get('/',[ServiceController::class,'Home'])->name('Home');
 
-Route::get('/services', function () {
+/*Route::get('/services', function () {
     return view('services');
-});
+});*/
 
 Route::get('/about', function () {
     return view('about');
@@ -69,35 +69,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
     Route::get('/dashboard',[AdminController::class,'dashboard'])->name('dashboard');
 });
 /*-----------------------------------------------------------*/
-/*Route::get('/aservice', function () {
-    return view('admin.service_add');
-});
-Route::get('/show', function () {
-    return view('admin.show');
-});
 
 
-
-Route::get('/aservice','AdminController');
-Route::post('aservice','AdminController@aservice');
-Route::get('show/{id}','AdminController@show');*/
-
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
-])->group(function () {
-    Route::get('/aservice',[AdminController::class,'index'])->name('dashboard');
-});
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
-])->group(function () {
-    Route::post('/aservice',[AdminController::class,'aservice'])->name('dashboard');
-});
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
-])->group(function () {
-    Route::get('/show/{id}',[AdminController::class,'show'])->name('dashboard');
-});
-Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
-])->group(function () {
-    Route::get('/showall',[AdminController::class,'showall'])->name('dashboard');
-});
 
 /*-----------------------------------------------------------------------------------*/
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
@@ -153,13 +126,14 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'
     Route::get('/Delete-portfolio/{id}',[AdminController::class,'Delete_portfolio_Details'])->name('portfolio_Delete');
 });
 Route::get('/services',[ServiceController::class,'Services'])->name('Shop');
-Route::get('/portfolio',[PortfolioController::class,'portfolio'])->name('portfolio');
+
+//Route::get('/portfolio',[PortfolioController::class,'portfolio'])->name('portfolio');
 
 
-Route::get('/service/{book_id}', [ServiceController::class, 'portfoliosByBook'])->name('portfoliosByBook');
+//Route::get('/service/{book_id}', [ServiceController::class, 'portfoliosByBook'])->name('portfoliosByBook'); 
 
-Route::get('/portfolio/{portfolio_id}', [ServiceController::class, 'portfoliosByPortfolio'])->name('portfoliosByPortfolio');
-
+/*Route::get('/portfolio/{portfolio_id}', [ServiceController::class, 'portfoliosByPortfolio'])->name('portfoliosByPortfolio');
+ */
 
 
 Route::get('/Portfolios', [PortfolioController::class, 'showPortfoliosByBook'])

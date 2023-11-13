@@ -134,8 +134,10 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{url('/')}}"
                     class="nav-item nav-link <?php if ($page === 'home') echo 'active'; ?> nav-link pulse">Home</a>
+
                 <a href="{{ urldecode(url('/services')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'services') echo 'active'; ?>">Services</a>
+                    
                     <a href="{{ urldecode(url('/Portfolios')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'Portfolios') echo 'active'; ?>">Portfolios</a>
 
