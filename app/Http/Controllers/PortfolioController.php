@@ -31,7 +31,7 @@ public function showPortfolioInBook($portfolioId)
     $book = Book::where('name', 'DRONE SOLUTIONS')->firstOrFail();
 
     // Find the portfolio by its ID within the specified book
-    $portfolio = Portfolio::where('id', $portfolioId)
+    $portfolio = Portfolio::where('title', $portfolioId)
         ->where('book_id', $book->id)
         ->firstOrFail();
 

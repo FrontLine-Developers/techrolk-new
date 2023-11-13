@@ -78,7 +78,7 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <!--<p class="mb-4">{!! $portfolio->small_description !!} -->
                         </p>
-                       <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('showPortfolioInBook', ['portfolio' => $portfolio->id]) }}">Explore</a>
+                       <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('showPortfolioInBook', ['portfolio' => $portfolio->title]) }}">Explore</a>
                     </div>
                 </div>
             </div>
