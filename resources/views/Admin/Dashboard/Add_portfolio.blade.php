@@ -18,7 +18,10 @@
                                 <label>Name</label>
                                 <input type="text" name="title" class="form-control" required/>
                             </div>  
-                            
+                            <div class="form-group">
+                                <label>Short Description</label>
+                                <textarea name="Sdescription" class="textarea" style="width: 730px; height: 200px" required></textarea>
+                            </div>  
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea name="description" class="textarea" style="width: 730px; height: 200px" required></textarea>
@@ -28,7 +31,7 @@
                                 <input type="text" name="youtube_video_url" class="form-control" required/>
                             </div> 
                             <div class="form-group">
-                                <label>Service (Book)</label>
+                                <label>Service </label>
                                 <select name="book_id" class="form-control" required>
                                     @foreach($books as $book)
                                         <option value="{{ $book->id }}">{{ $book->name }}</option>

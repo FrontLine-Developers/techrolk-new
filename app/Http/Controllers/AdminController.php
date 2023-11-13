@@ -136,6 +136,7 @@ public function dashboard_index()
     
         // Populate the portfolio model with the form data
         $portfolio->title = $request->title;
+        $portfolio->Sdescription = $request->Sdescription;
         $portfolio->description = $request->description;
         $portfolio->youtube_video_url = $request->youtube_video_url;
         $portfolio->book_id = $request->book_id;
@@ -186,6 +187,7 @@ public function dashboard_index()
         $portfolio=Portfolio::find($id);
             
         $portfolio->title=$request-> title;
+        $portfolio->Sdescription = $request->Sdescription;
         $portfolio->description=$request-> description;
         $portfolio->youtube_video_url=$request-> youtube_video_url;
         $portfolio->book_id = $request->book_id;
