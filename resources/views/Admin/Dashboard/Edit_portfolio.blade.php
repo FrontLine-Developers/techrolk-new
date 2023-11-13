@@ -20,7 +20,7 @@
                             </div>  
                             <div class="form-group">
                                 <label>Short Description</label>
-                                <textarea name="Sdescription" class="textarea" style="width: 730px; height: 200px" required>{!! $portfolio->description !!}</textarea>
+                                <textarea name="Short_description" class="textarea" style="width: 730px; height: 200px" required>{!! $portfolio->description !!}</textarea>
                             </div> 
                             <div class="form-group">
                                 <label>Description</label>
