@@ -8,24 +8,25 @@
 ?>
     @include('header')
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="portfolio | TechRoLK Engineering Solutions" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Portfolio | TechRoLK Engineering Solutions" />
+        <meta name="description" content="Explore our portfolio of innovative engineering solutions and discover how we transform ideas into reality." />
+        <meta name="keywords" content="portfolio, innovative engineering solutions, Techrolk Engineering Solutions, Sri Lanka, mechatronics, robotics, drones, custom prototypes, cutting-edge technologies, experienced engineers, transforming ideas into reality" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="Services | TechRoLK Engineering Solutions" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://techrolk.com/portfolio" />
+        <meta property="og:title" content="Portfolio | TechRoLK Engineering Solutions" />
+        <meta property="og:description"
+            content="Explore our portfolio of innovative engineering solutions and discover how we transform ideas into reality." />
+        <meta property="og:image" content="{{ asset('content/img/cover.jpg') }}" />
 
-    <!-- Twitter / WA / TG -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
-    <meta property="twitter:title" content="Services | TechRoLK Engineering Solutions" />
-    <meta property="twitter:description" content="" />
-    <meta property="twitter:image" content="" />
+        <!-- Twitter / WA / TG -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://techrolk.com/portfolio" />
+        <meta property="twitter:title" content="Portfolio | TechRoLK Engineering Solutions" />
+        <meta property="twitter:description" content="Explore our portfolio of innovative engineering solutions and discover how we transform ideas into reality." />
+        <meta property="twitter:image" content="{{ asset('content/img/cover.jpg') }}" />
 
     <style>
         .services-page-header {
@@ -71,12 +72,12 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="/uploadsP/{{$portfolio->image1}}" alt="Drone-Solutions"
+                            <img class="img-fluid position-absolute w-100 h-100" src="/uploadsP/{{$portfolio->image1}}" alt="{{$portfolio->title}}"
                                 style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <!--<p class="mb-4">{!! $portfolio->small_description !!} -->
+                        <p class="mb-4">{!! $portfolio->Sdescription !!}
                         </p>
                         <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('showPortfolioInBook', ['portfolio' => str_replace(' ', '-', $portfolio->title)]) }}">Explore</a>
 

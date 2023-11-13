@@ -9,7 +9,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 style="color: black;">Add New Service</h3>
+                        <h3 style="color: black;">Edit Project</h3>
                     </div>
                     <div class="panel-body">
                         <form class="image-upload" method="post" action="{{url('/Edit-portfolio',$portfolio->id )}}" enctype="multipart/form-data">
@@ -20,7 +20,7 @@
                             </div>  
                             <div class="form-group">
                                 <label>Short Description</label>
-                                <textarea name="Sdescription" class="textarea" style="width: 730px; height: 200px" required>{!! $portfolio->description !!}</textarea>
+                                <textarea name="Sdescription" class="textarea" style="width: 730px; height: 200px" required>{!! $portfolio->Sdescription !!}</textarea>
                             </div> 
                             <div class="form-group">
                                 <label>Description</label>

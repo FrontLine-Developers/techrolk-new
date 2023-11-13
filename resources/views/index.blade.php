@@ -12,25 +12,25 @@
 
     <title>TechRoLK Engineering Solutions | Build Your Imagination</title>
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="TechRoLK Engineering Solutions | Build Your Imagination" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="FrontLine Developers" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="TechRoLK Engineering Solutions" />
+        <meta name="description" content="Your One-Stop Shop for Innovative Engineering Solutions" />
+        <meta name="keywords" content="Techrolk Engineering Solutions, innovative engineering solutions, Sri Lanka, mechatronics, robotics, drones, custom prototypes, cutting-edge technologies, experienced engineers, transforming ideas into reality, one-stop shop" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="TechRoLK Engineering Solutions | Build Your Imagination" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://techrolk.com/" />
+        <meta property="og:title" content="TechRoLK Engineering Solutions" />
+        <meta property="og:description"
+            content="Your One-Stop Shop for Innovative Engineering Solutions" />
+        <meta property="og:image" content="{{ asset('content/img/cover.jpg') }}" />
 
-    <!-- Twitter / WA / TG -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
-    <meta property="twitter:title" content="TechRoLK Engineering Solutions | Build Your Imagination" />
-    <meta property="twitter:description" content="" />
-    <meta property="twitter:image" content="" />
+        <!-- Twitter / WA / TG -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://techrolk.com/" />
+        <meta property="twitter:title" content="TechRoLK Engineering Solutions" />
+        <meta property="twitter:description" content="Your One-Stop Shop for Innovative Engineering Solutions" />
+        <meta property="twitter:image" content="{{ asset('content/img/cover.jpg') }}" />
 
 </head>
 

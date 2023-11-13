@@ -9,24 +9,25 @@
 
     @include('header')
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="About Us | TechRoLK" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="About Us | TechRoLK Engineering Solutions" />
+        <meta name="description" content="The Techrolk Engineering Solutions team is composed of experienced engineers who are passionate about creating innovative engineering solutions." />
+        <meta name="keywords" content="Techrolk Engineering Solutions, engineering solutions, Sri Lanka, mechatronics, robotics, drones, custom prototypes, innovative engineering, experienced engineers, cutting-edge technologies" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="About Us | TechRoLK" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://techrolk.com/about" />
+        <meta property="og:title" content="About Us | TechRoLK Engineering Solutions" />
+        <meta property="og:description"
+            content="The Techrolk Engineering Solutions team is composed of experienced engineers who are passionate about creating innovative engineering solutions." />
+        <meta property="og:image" content="{{ asset('content/img/cover.jpg') }}" />
 
-    <!-- Twitter / WA / TG -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
-    <meta property="twitter:title" content="About Us | TechRoLK" />
-    <meta property="twitter:description" content="" />
-    <meta property="twitter:image" content="" />
+        <!-- Twitter / WA / TG -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://techrolk.com/about" />
+        <meta property="twitter:title" content="About Us | TechRoLK Engineering Solutions" />
+        <meta property="twitter:description" content="The Techrolk Engineering Solutions team is composed of experienced engineers who are passionate about creating innovative engineering solutions." />
+        <meta property="twitter:image" content="{{ asset('content/img/cover.jpg') }}" />
 
 
     <style>

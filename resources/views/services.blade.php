@@ -8,24 +8,25 @@
 ?>
     @include('header')
 
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="Services | TechRoLK Engineering Solutions" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Services | TechRoLK Engineering Solutions" />
+        <meta name="description" content="Unleash the power of innovation with our comprehensive range of engineering services." />
+        <meta name="keywords" content="engineering services, Techrolk Engineering Solutions, Sri Lanka, mechatronics, robotics, drones, custom prototypes, cutting-edge technologies, experienced engineers, transforming ideas into reality" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="Services | TechRoLK Engineering Solutions" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://techrolk.com/services" />
+        <meta property="og:title" content="Services | TechRoLK Engineering Solutions" />
+        <meta property="og:description"
+            content="Unleash the power of innovation with our comprehensive range of engineering services." />
+        <meta property="og:image" content="{{ asset('content/img/cover.jpg') }}" />
 
-    <!-- Twitter / WA / TG -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="" />
-    <meta property="twitter:title" content="Services | TechRoLK Engineering Solutions" />
-    <meta property="twitter:description" content="" />
-    <meta property="twitter:image" content="" />
+        <!-- Twitter / WA / TG -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://techrolk.com/services" />
+        <meta property="twitter:title" content="Services | TechRoLK Engineering Solutions" />
+        <meta property="twitter:description" content="Unleash the power of innovation with our comprehensive range of engineering services." />
+        <meta property="twitter:image" content="{{ asset('content/img/cover.jpg') }}" />
 
     <style>
         .services-page-header {

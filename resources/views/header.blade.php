@@ -136,8 +136,8 @@
                     class="nav-item nav-link <?php if ($page === 'home') echo 'active'; ?> nav-link pulse">Home</a>
                 <a href="{{ urldecode(url('/services')) }}"
                     class="nav-item nav-link nav-link pulse <?php if ($page === 'services') echo 'active'; ?>">Services</a>
-                    <a href="{{ urldecode(url('/Portfolios')) }}"
-                    class="nav-item nav-link nav-link pulse <?php if ($page === 'Portfolios') echo 'active'; ?>">Portfolios</a>
+                    <a href="{{ urldecode(url('/portfolio')) }}"
+                    class="nav-item nav-link nav-link pulse <?php if ($page === 'portfolio') echo 'active'; ?>">Portfolio</a>
 
                  <!--   <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownPortfolios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -158,6 +158,22 @@
                         </div>
                     </div>    -->
 
+                    
+                    <style>
+  @media only screen and (max-width: 600px) {
+    #mobile-shop-link {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 601px) {
+    #mobile-shop-link {
+      display: none;
+    }
+  }
+</style>
+
+<a href="https://techrolk.com/shop/" id="mobile-shop-link" class="nav-item nav-link nav-link pulse">Shop</a>
 
 
 
