@@ -28,7 +28,7 @@
                                 <input type="text" name="youtube_video_url" class="form-control" required/>
                             </div> 
                             <div class="form-group">
-                                <label>Service (Book)</label>
+                                <label>Service </label>
                                 <select name="book_id" class="form-control" required>
                                     @foreach($books as $book)
                                         <option value="{{ $book->id }}">{{ $book->name }}</option>

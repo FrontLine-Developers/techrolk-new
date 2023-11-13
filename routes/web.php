@@ -165,5 +165,6 @@ Route::get('/portfolio/{portfolio_id}', [ServiceController::class, 'portfoliosBy
 Route::get('/Portfolios', [PortfolioController::class, 'showPortfoliosByBook'])
     ->name('books.portfolios');
 
+    
  Route::get('/{portfolio}', [PortfolioController::class, 'showPortfolioInBook'])->name('showPortfolioInBook');
  
