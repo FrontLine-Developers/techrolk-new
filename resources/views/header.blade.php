@@ -5,11 +5,11 @@
 
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="content/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="content/icons/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="content/icons/logo-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="content/icons/logo-192.png">
-    <meta name="msapplication-TileImage" content="content/icons/logo-70.png">
+    <link rel="shortcut icon" href="{{ asset('content/icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('content/icons/favicon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('content/icons/logo-180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('content/icons/logo-192.png') }}">
+    <meta name="msapplication-TileImage" content="{{ asset('content/icons/logo-70.png') }}">
     <meta name="msapplication-TileColor" content="#FF4747">
 
     <!-- Google Fonts -->
@@ -101,6 +101,7 @@
                 font-size: 13px;
             }
             
+            
         }
     </style>
 
@@ -123,7 +124,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="{{url('/')}}" class="navbar-brand d-flex align-items-center px-1 px-lg-4">
-            <img src="content/icons/logo.png" alt="" class="img-header">
+            <img src="{{ asset('content/icons/logo.png') }}" alt="" class="img-header">
             <h5 class="m-0 text-primary h5-header" style="font-family: 'Arimo', sans-serif;">&nbsp; &nbsp; TechRoLK <br>&nbsp; &nbsp; Engineering Solutions</h5>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -167,7 +168,7 @@
                 <a href="{{ urldecode(url('/contact')) }}"
                     class="nav-item nav-link <?php if ($page === 'contact') echo 'active'; ?> nav-link pulse">Contact</a>
 
-                <a href="{{ urldecode(url('/shop')) }}" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
+                <a href="https://techrolk.com/shop/" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Shop<i
                         class="fa fa-arrow-right ms-3"></i></a>
 
             </div>

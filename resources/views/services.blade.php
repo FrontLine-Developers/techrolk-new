@@ -58,18 +58,21 @@
     <!-- Header End -->
 
     @foreach ($books as $book)
+    
     <div class="container-xxl py-5" id="drone-solutions">
 
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3"></h6>
                 <h1 class="mb-5">{{ $book->name }}</h1>
+               
             </div>
 
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
+                            
                             <img class="img-fluid position-absolute w-100 h-100" src="/uploads/{{$book->image}}" alt="Drone-Solutions"
                                 style="object-fit: cover;">
                         </div>
@@ -85,6 +88,12 @@
     </div>
     
     @endforeach
+   
+   
+   
+
+    
+  
    
    
    
