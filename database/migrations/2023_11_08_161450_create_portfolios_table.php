@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->text('Sdescription');
             $table->text('description');
             $table->text('youtube_video_url')->nullable();
             $table->string('image1');

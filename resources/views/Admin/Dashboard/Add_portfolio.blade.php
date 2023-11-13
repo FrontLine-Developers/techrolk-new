@@ -18,7 +18,10 @@
                                 <label>Name</label>
                                 <input type="text" name="title" class="form-control" required/>
                             </div>  
-                            
+                            <div class="form-group">
+                                <label>Short Description</label>
+                                <textarea name="Sdescription" class="textarea" style="width: 730px; height: 200px" required></textarea>
+                            </div>  
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea name="description" class="textarea" style="width: 730px; height: 200px" required></textarea>
